@@ -6,11 +6,16 @@
  */
 #include <stdio.h>
 
+int sc(void){
+	int a;
+	scanf("%d",&a);
+	return a;
+}
 int main(void) {
 	int ten;									//点数の宣言
 
 	printf("点数を入力してください＞\n");
-	scanf("%d",&ten);							//点数入力
+	ten = sc();							//点数入力
 
 	if (ten >= 60) {
 		printf("合格です。\n");
